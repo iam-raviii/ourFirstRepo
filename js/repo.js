@@ -214,4 +214,134 @@ console.log(EmailValid(variableEmail))
 
 
 
+console.log("FRIDAY'S CHALLENGE")
 
+
+function indexAt(str, char)
+{
+	for(var i = 0; i < str.length; i++)
+	{
+		if(str.charAt(i) == char)
+			console.log(i);
+	}
+}
+indexAt("cat", "a");
+
+
+function includeChar(str, char)
+{
+	for(var i = 0; i < str.length; i++){
+
+		if(str.charAt(i) == char)
+		{
+			return true
+		}
+	}
+	return false
+}
+console.log(includeChar("fish", "i"))
+
+
+function SliceString(str, start, stop)
+{
+	if(start > str.length){
+		console.log("Start index not found in string:");
+		return;
+	}
+	if(stop > str.length){
+		console.log("Stop index not found in string");
+		return;
+	}
+	
+	var word = "";
+	for(var i = start; i < (stop+1); i++)
+	{
+		word = word.concat(str[i]);
+	}
+		return word;
+	
+}
+console.log(SliceString("whiteCheetah", 1 , 5));
+
+
+var firstPart;
+var indexPart;
+var lastPart;	
+function Replace(str, index, newChar)
+{		
+	if(index >= str.length)
+	{
+		console.log("Index not found")
+		return;
+	}
+	indexPart = newChar;
+	// console.log(indexPart)
+
+	firstPart = SliceString(str, 0, (index-1));
+	// console.log(firstPart)
+	
+	lastPart = SliceString(str, (index+1), (str.length-1));
+	// console.log(lastPart)
+
+	var newWord = firstPart.concat(indexPart, lastPart)
+	console.log(newWord)
+}
+Replace("butter", 1, "e")
+
+
+// test
+/*var str1 = "Hello"
+var str2 = "World"
+var str3 = "."
+var str4 = str1.concat(str2, str3)
+console.log(str4)*/
+
+// STRING OBJECT 
+function ModString(val)
+{
+	if ( typeof val != "string")
+	{
+		console.log("not a stirng")
+		return;
+	}
+	this.val = val,
+
+	this.ModSlice = function(start, stop)
+	{
+		var newVal = ""
+		for(var i = start; i < stop; i++)
+		{
+			newVal += this.val[i]
+		}
+		this.val = newVal
+	},
+
+	this.LastIndex = function(char)
+	{
+		for(var i = myString.val.length; i >= 0; i--)
+		{
+			if(myString.val[i] == char)
+			{
+				console.log(i);
+				break;
+			}
+		}
+	},
+
+	this.CountLength = function()
+	{
+		var count = 0
+		while(this.val[count] != undefined)
+		{
+			count++;
+		}
+		console.log(count)
+	}
+}
+
+var myString = new ModString("This is my string")
+console.log(typeof myString.val)
+// myString.ModSlice(3, 7)
+console.log(myString.val)
+// myString.LastIndex("i")
+myString.CountLength()

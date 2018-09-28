@@ -1,0 +1,18 @@
+#formDiv{
+	background-color: lightblue;
+	width: 250px;
+	display: block;
+	margin: auto;
+	padding: 10px 10px 30px 70px;
+	border-radius: 10px;
+	box-shadow: 16px 17px 19px -5px rgba(0,0,0,0.75);
+}
+
+.formC
+{
+	border-radius: 8px;
+}
+
+#buttonId{
+	border-radius: 10px;
+}

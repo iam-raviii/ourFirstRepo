@@ -19,9 +19,22 @@ $("#colorButton").click(function(){
 
 // animate
 $("#leftButton").click(function(){
-	$("#divId").animate({left:"600px"});
-	$("#divId").animate({left:"0"});
+	$("#divId").animate({left:"-=100px"});	
 })
+
+$("#rightButton").click(function(){
+	$("#divId").animate({left:"+=100px"});
+})
+
+
+$("#downButton").click(function(){
+	$("#divId").animate({top:"+=100px"});
+})
+
+$("#topButton").click(function(){
+	$("#divId").animate({top:"-=100px"});
+})
+
 
 
 // stop animation
@@ -98,6 +111,10 @@ function GuessNumber ()
 			playerGuess = window.prompt("Guess a Number between 1 and 20");
 			count++;
 		}
+		if(isNaN(playerGuess)){
+			alert("That's not a number.")
+			return;
+		}
 	}
 	if(playerGuess == randomNumber)
 	{
@@ -129,6 +146,64 @@ function GuessNumber ()
 
 $("#guessGame").click(function(){
 	GuessNumber();
+})
+
+
+// Palindrome Word
+$("#palinButton").click(function(){
+	var word = $("#palinInput").val();
+	word = word.toLowerCase();
+	word = word.replace(" ", "")
+	word = word.replace("  ", "")
+	console.log(word)
+
+	var arr = word.split("")
+	console.log(arr)
+ 
+	var arr2 = arr.reverse();
+	console.log(arr2)
+
+	var newString = arr2.join("");
+	console.log(newString)
+
+	if(word == newString)
+	{
+		console.log("Palindrome")
+	}
+	else
+	{
+		console.log("Not a Palindrome")
+	}
+})
+
+
+// Keydown animation
+
+$(document).keydown(function(e){
+
+console.log(e.keyCode)
+if(e.keyCode == 38)
+{
+	$("#divId").animate({top:"-=50px"});
+}
+
+if(e.keyCode == 40)
+{
+	$("#divId").animate({top:"+=50px"});
+}
+
+if(e.keyCode == 39)
+{
+	$("#divId").animate({right:"-=50px"});
+}
+
+if(e.keyCode == 37)
+{
+	$("#divId").animate({right:"+=50px"});
+}
+
+
+
 })
 
 // End of jQuery

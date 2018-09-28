@@ -1,0 +1,147 @@
+#navBarId{
+	width: 80vw;
+	margin-left: 8vw;
+}
+#navBarId a {
+	color: black !important;
+	font-weight: 700;
+}
+#searchBarInputId{
+	width: 60vw !important;
+}
+#searchBarId{
+	margin-left: 8vw;
+	width: 80vw;
+}
+.dropdown-menu{
+	background-color: #00a63f !important;
+	color: yellow !important ;
+	width: 40vw;
+}
+.dropdown-menu p{
+	color: #ffffff !important;
+}
+.carousel-item{
+	margin-left: 5vw;
+}
+
+.carousel-item img{
+	width: 90vw !important;
+	height: 30vw !important;
+}
+#text1{
+	font-size: 35px; 
+	margin-left: 2vw;
+	margin-top: 2vw;
+	text-align: center;
+	font-weight: 500;
+}
+#text2{
+	font-size: 25px; 
+	margin-left: 10vw;
+	margin-top: 2vw;
+	font-weight: 500;
+}
+#rightBarId{
+	width: 92vw;
+	margin-left: 4vw !important;
+}
+#logoId{
+	color: #00a63f;
+	font-family:  Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	margin-right: 59vw;
+	margin-top: 1vw;
+	font-weight: 800;
+	display: inline;
+}
+.stcol{
+	width: 90vw;
+	background-color: white;
+	margin: 0 4%;
+	border-radius: 12px;
+	/*padding: 10px 3px 10px 3px;*/
+	margin: 20px 50px 20px 50px;
+	box-shadow: 8px 8px 15px -2px rgba(0,0,0,0.4);
+}
+.stcol:hover{
+background: rgba(212,228,239,1);
+}
+#container1Id{
+	width: 95%;
+	margin-left: 3vw;
+	background-color: #f5f7f8;
+	padding-bottom: 25px;
+}
+.lightWeight{
+	font-weight: 650;
+}
+.heavyWeight{
+	font-weight: 700;
+	font-size: 25px;
+}
+.divImgId{
+	width: 13vw;
+	margin-bottom: 2vw;
+	margin-top: 1vw;
+}
+#fluidImgDiv img{
+	width: 100% !important;
+	height: 400px;
+}
+#videoDiv{
+	width: 98%;
+}
+.vidId{
+	background-color: #ffffff;
+	margin:0 2% 0 5vw;
+	margin-top: 1vw;
+	width: 23vw;
+	box-shadow: 10px 15px 15px -5px rgba(0,54,54,1);
+	
+}
+.videoId{
+	border-radius: 8px;
+}
+.videoId:hover{
+	background: rgba(212,228,239,1);
+}
+.bigVideoId{
+	width: 100%;
+	height: 500px;
+	border-radius: 1%;
+	box-shadow: 10px 15px 15px -5px rgba(0,54,54,1);
+}
+#footerDiv1{
+	background-color: #000000 !important;
+}
+
+#footerDiv2{
+	background-color: #000000 !important;
+	
+}
+#footerDiv3{
+	background-color: #000000 !important;
+	color: white;
+}
+#fotterId{
+	background-color: #00000090;
+}
+#footerNote1{
+	background-color: #00000090;
+}
+#footerNote2{
+	background-color: #00000090;
+	color: white;
+}
+#footerNote3{
+	background-color: #00000090;
+	color: white;
+}
+#helpId{
+	background-color: #00a63f;
+	width: 100%;
+	height: 12%;
+	color: white !important;
+	text-align: center;
+}

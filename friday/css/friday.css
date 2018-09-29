@@ -3,7 +3,6 @@
 	margin-left: 8vw;
 }
 #navBarId a {
-	color: black !important;
 	font-weight: 700;
 }
 #searchBarInputId{
@@ -13,13 +12,15 @@
 	margin-left: 8vw;
 	width: 80vw;
 }
-.dropdown-menu{
+.menuDropClass{
 	background-color: #00a63f !important;
 	color: yellow !important ;
 	width: 40vw;
+	outline-width: 20px;
 }
-.dropdown-menu p{
-	color: #ffffff !important;
+.signinDrop{
+	background-color: #ffffff;
+	padding: 2px 2px 2px 2px;
 }
 .carousel-item{
 	margin-left: 5vw;
@@ -96,12 +97,15 @@ background: rgba(212,228,239,1);
 	background-color: #ffffff;
 	margin:0 2% 0 5vw;
 	margin-top: 1vw;
-	width: 23vw;
+	width: 100%;
 	box-shadow: 10px 15px 15px -5px rgba(0,54,54,1);
 	
 }
 .videoId{
 	border-radius: 8px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 .videoId:hover{
 	background: rgba(212,228,239,1);
@@ -144,4 +148,10 @@ background: rgba(212,228,239,1);
 	height: 12%;
 	color: white !important;
 	text-align: center;
+}
+.dropdown-item{
+	color: black !important;
+}
+.menuHeader{
+	color: black !important;
 }

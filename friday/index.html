@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!--my CSS-->
 	<link rel="stylesheet" type="text/css" href="./css/friday.css">
+	<link rel="shortcut icon" href="./img/titleIcon.ico" >
 
 	<title>godaddy.com</title>
 </head>
@@ -13,17 +14,28 @@
 <!--Right align menu-->
 <ul class="nav justify-content-end" id="rightBarId">
 	<p id="logoId">GoDaddy</p>
-  
   <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Contact Us</a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-         </div>
+    Sign In</a>
+    <div class="dropdown-menu signinDrop" aria-labelledby="navbarDropdownMenuLink">
+    	<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
   </li>
-  
   <li class="nav-item">
     <a class="nav-link" href="#">Help</a>
   </li>
@@ -31,18 +43,21 @@
   <li class="nav-item">
     <a class="nav-link" href="#">Blog</a>
   </li>
-  
   <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Sign In</a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    Contact Us</a>
+    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
          </div>
   </li>
+  
+  
+  
 </ul>
 <!--End right align menu-->
+
 
 
 <!--NAVBAR-->
@@ -54,9 +69,9 @@
     <ul class="navbar-nav">
 
      <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link menuHeader" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Domain </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu menuDropClass" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -64,19 +79,19 @@
      </li>
       	
     <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link menuHeader" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Websites </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <p class="dropdown-item" href="#">Action</p>
+        <div class="dropdown-menu menuDropClass" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
          </div>
      </li>
       
     <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link menuHeader" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Hosting </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu menuDropClass" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -84,9 +99,9 @@
      </li>
       
      <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link menuHeader" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Web Securrity</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu menuDropClass" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -94,10 +109,10 @@
       </li>
       
        <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link menuHeader" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Online Marketing</a>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu menuDropClass" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -105,10 +120,10 @@
       </li>
      
       <li class="nav-item dropdown">
-        <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link menuHeader" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Email and office
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu menuDropClass" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -248,7 +263,9 @@
 <br>
 <!--Help div-->
 <div class="fluid-container" id="helpId">
-	<p class="heavyWeight">Need help? Call our award-winning support team 24/7 at 040-67607600 </p>
+	<p class="heavyWeight" id="helpText">
+	Need help? Call our award-winning support team 24/7 at 040-67607600 
+	</p>
 </div>
 
 </div>
@@ -271,7 +288,7 @@
   <div class="card-body" id="footerDiv3">
     <h5 class="card-title">Ravi web design &copy;</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary" id="fotterId">Go somewhere</a>
+    <a href="#text1" class="btn btn-primary" id="fotterId">Go somewhere</a>
   </div>
 </div>
 <!--End of footer-->
